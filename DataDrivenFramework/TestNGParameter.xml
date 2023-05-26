@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name=" Test Suite">
+
+	<test name="LoginWithBothCorrect">
+		<parameter name="username" value="Admin"></parameter>
+		<parameter name="password" value="admin123"></parameter>
+		<classes>
+
+			<class name="loginTestCase.LoginWithBothCorrect"></class>
+		</classes>
+	</test>
+
+	<test name="LoginWithBothIncorrect">
+		<parameter name="username" value="Admin1"></parameter>
+		<parameter name="password" value="admin1234"></parameter>
+		<classes>
+			<class name="loginTestCase.LoginWithBothIncorrect"></class>
+		</classes>
+	</test>
+
+	<test name="LoginWithCrtPassword">
+		<parameter name="username" value="Admin1"></parameter>
+		<parameter name="password" value="admin123"></parameter>
+		<classes>
+			<class name="loginTestCase.LoginWithCrtPassword"></class>
+		</classes>
+	</test>
+
+	<test name="LoginWithCrtUserName">
+		<parameter name="username" value="Admin"></parameter>
+		<parameter name="password" value="admin1234"></parameter>
+		<classes>
+			<class name="loginTestCase.LoginWithCrtUserName"></class>
+		</classes>
+
+	</test>
+</suite>
